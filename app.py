@@ -69,7 +69,7 @@ def time_post():
           print(request.form['text'].split())
           
           for item in request.form['text'].split():
-            answer = (datetime.datetime.now(pytz.timezone("NorthAmerica/California")).strftime('Time = ' + '%H:%M:%S' + ' PST ' + ' Year = ' + '%d-%m-%Y'))
+            answer = (datetime.datetime.now(pytz.timezone("America/LosAngeles")).strftime('Time = ' + '%H:%M:%S' + ' PST ' + ' Year = ' + '%d-%m-%Y'))
             #answer = datetime.datetime.now().strftime('Time == ' + '%H:%M:%S' + ' Year == ' + '%d-%m-%Y')
             #answer = datetime.datetime.now().strftime('%Y-%m-%d \n %H:%M:%S')
 
